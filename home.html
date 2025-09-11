@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyWealth Hub</title>
+  <title>MyWealthHub</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: "Garamond", serif;
+            font-family: "Open Sans", serif;
+            scroll-behavior: smooth;
         }
         .gradient-bg {
             background: linear-gradient(135deg, #1d1d16 0%, #C8A349 50%, #1d1d16 100%);
@@ -31,25 +32,31 @@
     </style>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            gold: '#C8A349',
-            charcoal: '#1d1d16',
-            light: '#F8F8F8',
-            textdark: '#222222',
-          }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#fefce8',
+                        'primary-yellow': '#fab81f',
+                        'secondary-yellow': '#fcd34d',
+                        'accent-yellow': '#f59e0b',
+                        'dark-gray': '#374151',
+                        'light-gray': '#f9fafb',
+                        gold: '#C8A349',
+                        charcoal: '#1d1d16',
+                        light: '#F8F8F8',
+                        textdark: '#222222'
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
 </head>
-<body class="font-sans text-textdark bg-light">
-    <header class="w-full bg-gold">
-        <div class="lg:flex flex text-white px-4 mx-auto">
+<body class="font-serif text-textdark bg-light">
+    <header class="w-full bg-gold shadow  flex items-center justify-between px-4 ">
+        <div class="lg:flex flex text-white px-4 flex">
             <a href="javascript:;"
-        class="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-white">
+        class="p-2 rounded-lg flex items-center justify-center transition-all duration-500 hover:border-gray-100 hover:bg-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72"
         fill="none">
         <path
@@ -58,7 +65,7 @@
         </svg>
         </a>
         <a href="javascript:;"
-        class="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-white">
+        class="p-2 rounded-lg flex items-center justify-center transition-all duration-500 hover:border-gray-100 hover:bg-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72"
         fill="none">
         <path
@@ -66,7 +73,7 @@
         fill="#111827" />
         </svg></a>
         <a href="javascript:;"
-        class="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-white">
+        class="p-2 rounded-lg flex items-center justify-center transition-all duration-500 hover:border-gray-100 hover:bg-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72"
         fill="none">
         <path
@@ -74,7 +81,7 @@
         fill="#111827" />
         </svg></a>
         <a href="javascript:;"
-        class="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-white">
+        class="p-2 rounded-lg flex items-center justify-center transition-all duration-500 hover:border-gray-100 hover:bg-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72"
         fill="none">
         <path
@@ -82,13 +89,17 @@
         fill="#111827" />
         </svg></a>
         <a href="javascript:;"
-        class="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-white">
+        class="p-2 rounded-lg flex items-center justify-center transition-all duration-500 hover:border-gray-100 hover:bg-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 71"
         fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd"
         d="M56.5615 18.2428C58.8115 18.8504 60.58 20.6234 61.1778 22.8708C62.2654 26.9495 62.2654 35.4647 62.2654 35.4647C62.2654 35.4647 62.2654 43.98 61.1778 48.0586C60.5717 50.3144 58.8032 52.0873 56.5615 52.6866C52.4932 53.7771 36.1703 53.7771 36.1703 53.7771C36.1703 53.7771 19.8557 53.7771 15.7791 52.6866C13.5291 52.079 11.7606 50.306 11.1628 48.0586C10.0752 43.98 10.0752 35.4647 10.0752 35.4647C10.0752 35.4647 10.0752 26.9495 11.1628 22.8708C11.7689 20.615 13.5374 18.8421 15.7791 18.2428C19.8557 17.1523 36.1703 17.1523 36.1703 17.1523C36.1703 17.1523 52.4932 17.1523 56.5615 18.2428ZM44.5142 35.4647L30.9561 43.314V27.6154L44.5142 35.4647Z"
         fill="#111827" />
         </svg></a>
+            </div>
+            <div class="flex items-center space-x-2 hover:text-white" >
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                <a href="mailto:info@mywealthhub.co.za">info@mywealthhub.co.za</a>
             </div>
     </header>
 
@@ -97,22 +108,24 @@
   <nav class="container mx-auto flex items-center justify-between p-4">
     <!-- Left: Logo -->
     <div class="flex items-center space-x-2">
-      <img src="content/MyWealthHub Logo.jpg" alt="MyWealth Hub Logo" class="w-[15vh] h-[15vh]">
+      <img src="content/MyWealthHub_Logo_No_BG.png" alt="MyWealth Hub Logo" class="w-[15vh] h-[15vh]">
     </div>
 
     <!-- Center: Navigation Links -->
     <ul class="flex space-x-8 text-white">
-      <li><a href="index.html" class="hover:text-gold">Home</a></li>
+      <li><a href="home.html" class="hover:text-gold font-bold text-gold">Home</a></li>
       <li><a href="marketplace.html" class="hover:text-gold">Marketplace</a></li>
       
       <!-- Programs Dropdown -->
       <li class="relative group">
         <button class="hover:text-gold">Programs ▾</button>
-        <ul class="absolute hidden group-hover:block bg-charcoal text-white mt-2 rounded shadow-lg w-56 z-10">
-          <li><a href="stokvel.html" class="block px-4 py-2 hover:bg-gold hover:text-charcoal">Stokvel Program</a></li>
-          <li><a href="entrepreneurs.html" class="block px-4 py-2 hover:bg-gold hover:text-charcoal">Entrepreneurs Program</a></li>
-          <li><a href="ambassadors.html" class="block px-4 py-2 hover:bg-gold hover:text-charcoal">Ambassador Program</a></li>
+        <div class="absolute hidden group-hover:block z-10">
+        <ul class="bg-charcoal text-white mt-2 rounded shadow-lg w-56">
+          <li><a href="stokvel.html" class="block px-4 py-2 hover:text-gold">Stokvel Program</a></li>
+          <li><a href="entrepreneurs.html" class="block px-4 py-2 hover:text-gold">Entrepreneurs Program</a></li>
+          <li><a href="ambassadors.html" class="block px-4 py-2 hover:text-gold">Ambassador Program</a></li>
         </ul>
+        </div>
       </li>
 
       <li><a href="about.html" class="hover:text-gold">About Us</a></li>
@@ -146,468 +159,413 @@
   </div>
 
   <!-- Hero Content -->
-  <div class="relative container mx-auto flex flex-col items-center justify-center text-center py-32 px-6">
-    <h1 class="text-5xl md:text-6xl font-extrabold text-gold drop-shadow-lg mb-6">
-      MyWealthHub
-    </h1>
-    <p class="text-lg md:text-2xl max-w-2xl mb-8">
-      Your Gateway to Financial Success.
-    </p>
-    <p class="text-lg md:text-2xl max-w-2xl mb-8 font-bold text-gold drop-shadow-lg mb-6">
-        Save, Earn, and Grow Together.
-    </p>
-
-    <!-- CTA Buttons -->
-    <div class="flex flex-wrap gap-4 justify-center">
-      <a href="register.html" class="bg-gold text-charcoal font-bold px-6 py-3 rounded shadow hover:bg-white hover:text-gold transition">
-        Get Started
-      </a>
-      <a href="#home" class="border border-gold text-white px-6 py-3 rounded shadow hover:bg-gold hover:text-charcoal transition">
-        Learn More
-      </a>
-    </div>
-  </div>
-</section>
-
-
-  <!-- About Section -->
-  <section id="home" class="bg-yellow-50 py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-6xl font-bold text-black mb-6 text-shadow">
-                Your Go-To Hub Of Opportunities
+  <div class="relative container mx-auto flex flex-col items-center justify-center text-center py-20 px-6 h-full">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gold drop-shadow-lg mb-6">
+                <span class="text-primary-yellow">MyWealthHub</span>
             </h1>
-            <p class="text-xl text-black mb-8 max-w-4xl mx-auto">
-                Connecting entrepreneurs with brand ambassadors to create a thriving ecosystem of growth, sales, and passive income in South Africa.
+            <p class="text-xl sm:text-2xl text-white mb-10 max-w-4xl mx-auto leading-relaxed">
+                Build your wealth by connecting entrepreneurs, ambassadors, and investors in one digital hub.
             </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#" class="bg-primary-yellow text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-accent-yellow transition duration-300 shadow-lg">
+                    <i class="fas fa-rocket mr-2"></i>Start Free Trial - 30 Days
+                </a>
+                <a href="#about" class="border-2 border-primary-yellow text-primary-yellow px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-yellow hover:text-white transition duration-300">
+                    <i class="fas fa-info-circle mr-2"></i>Learn More About Opportunities
+                </a>
+            </div>
         </div>
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Entrepreneur Card -->
-                <div class="bg-white rounded-xl shadow-glow p-8 hover-scale">
-                    <div class="text-center mb-6">
-                        <i class="fas fa-rocket text-4xl text-yellow-500 mb-4"></i>
-                        <h2 class="text-3xl font-bold text-gray-800 mb-4">I'm an Entrepreneur</h2>
-                        <p class="text-gray-600 mb-6">Scale your business with our network of skilled brand ambassadors. Access digital marketing tools, real-time analytics, and earn R500-R5,000+ per partnership.</p>
+    </section>
+
+    <!-- What Is MyWealth Hub -->
+    <section id ="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">What Is MyWealth Hub?</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        MyWealthHub is South Africa's leading digital platform that connects ambitious entrepreneurs with skilled brand ambassadors while offering innovative investment opportunities through our Digital Stokvel program. We've created a comprehensive ecosystem where businesses scale faster, individuals build substantial income streams, and communities invest collectively for greater returns, all backed by secure technology and transparent tracking systems.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="bg-primary-bg rounded-2xl p-8 shadow-lg">
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div class="bg-white rounded-xl p-4 shadow-sm">
+                                <i class="fas fa-users text-primary-yellow text-3xl mb-2"></i>
+                                <p class="font-semibold text-sm">Entrepreneurs</p>
+                                <p class="text-xs text-gray-600">Scaling Businesses</p>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 shadow-sm">
+                                <i class="fas fa-bullhorn text-primary-yellow text-3xl mb-2"></i>
+                                <p class="font-semibold text-sm">Ambassadors</p>
+                                <p class="text-xs text-gray-600">Earning Commissions</p>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 shadow-sm">
+                                <i class="fas fa-piggy-bank text-primary-yellow text-3xl mb-2"></i>
+                                <p class="font-semibold text-sm">Stokvel Members</p>
+                                <p class="text-xs text-gray-600">Collective Investing</p>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <i class="fas fa-sync-alt text-primary-yellow text-2xl"></i>
+                            <p class="text-sm text-gray-600 mt-2">Connected Success Ecosystem</p>
+                        </div>
                     </div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Access to 1000+ brand ambassadors</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Advanced tracking and analytics</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Digital marketing suite included</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Performance-based partnerships</span>
-                        </li>
-                    </ul>
-                    <button class="w-full gold-gradient hover:opacity-90 text-white py-3 rounded-lg font-semibold transition-opacity">
-                        Start Your 30-Day Free Trial
-                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 3 Core Programs -->
+    <section id="programs" class="py-16 px-4 sm:px-6 lg:px-8 bg-primary-bg">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">The 3 Core Programs</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Digital Stokvel -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-piggy-bank text-primary-yellow text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">Digital Stokvel</h3>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        Join our modern twist on traditional community savings, where members pool resources for collective investments and shared prosperity.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Leverage group buying power for superior investment returns</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Access exclusive investment opportunities</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Transparent fund management with real-time tracking</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Regular dividend distributions</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600 border-t pt-4">
+                        <i class="fas fa-shield-alt text-primary-yellow mr-2"></i>
+                        Regulated investment structure with audited financial reports
+                    </p>
                 </div>
 
-                <!-- Ambassador Card -->
-                <div class="bg-white rounded-xl shadow-glow p-8 hover-scale">
+                <!-- Ambassadors -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300">
                     <div class="text-center mb-6">
-                        <i class="fas fa-users text-4xl text-yellow-600 mb-4"></i>
-                        <h2 class="text-3xl font-bold text-gray-800 mb-4">I'm a Brand Ambassador</h2>
-                        <p class="text-gray-600 mb-6">Earn substantial commissions promoting quality products and services. Get marketing support, training, and see your real income grow with every successful sale.</p>
+                        <i class="fas fa-bullhorn text-primary-yellow text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">Ambassadors</h3>
                     </div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Earn R500-R5,000+ per successful sale</span>
+                    <p class="text-gray-700 mb-6">
+                        Transform your network and social influence into a substantial income stream by promoting quality products and services to your community.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Earn R500-R5,000+ per successful sale</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Weekly direct deposits to SA bank account</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Comprehensive marketing training included</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Access to pre-vetted, high-quality products</span>
+                        </div>
+                    </div>
+                    <div class="bg-primary-bg p-3 rounded-lg">
+                        <p class="text-sm font-semibold text-gray-800">
+                            <i class="fas fa-chart-line text-primary-yellow mr-2"></i>
+                            Top ambassadors earn R15,000-R35,000+ monthly
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Entrepreneurs -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-rocket text-primary-yellow text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">Entrepreneurs</h3>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        Scale your business exponentially by tapping into our network of 1,000+ trained brand ambassadors who become extensions of your sales team.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Access to 1,000+ skilled ambassadors</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Advanced analytics dashboard included</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Digital marketing suite (R2,500 value)</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Pay-for-performance model only</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600 border-t pt-4">
+                        <i class="fas fa-handshake text-primary-yellow mr-2"></i>
+                        Win-win partnerships that drive sustainable growth
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Secure Marketplace</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    Our secure marketplace serves as the central hub where vendors showcase their offerings, ambassadors select products to promote, and customers discover quality solutions they can trust.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">How the Ecosystem Works</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-primary-yellow text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">1</div>
+                            <span><strong>Vendors</strong> list verified products with competitive commission structures</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-primary-yellow text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">2</div>
+                            <span><strong>Ambassadors</strong> choose offerings that match their audience and expertise</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-primary-yellow text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">3</div>
+                            <span><strong>Customers</strong> benefit from personalized recommendations and ambassador support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary-bg rounded-2xl p-8">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-shield-alt text-primary-yellow mr-2"></i>
+                        Security & Compliance
+                    </h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-lock text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Escrow payment system protects all parties</span>
                         </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Weekly payouts to SA bank accounts</span>
+                        <li class="flex items-start">
+                            <i class="fas fa-certificate text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Full regulatory compliance with SA standards</span>
                         </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Comprehensive training programs</span>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-double text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Quality assurance protocols for all listings</span>
                         </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>24/7 marketing support</span>
+                        <li class="flex items-start">
+                            <i class="fas fa-gavel text-primary-yellow mt-1 mr-3"></i>
+                            <span class="text-sm">Fair dispute resolution system</span>
                         </li>
                     </ul>
-                    <button class="w-full gold-gradient hover:opacity-90 text-white py-3 rounded-lg font-semibold transition-opacity">
-                        Join 30-Day Free Trial
-                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- How It Works -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">How WealthHub Connect Works</h2>
-            <p class="text-gray-600 text-center mb-12">Discover the power of networking with WealthHub Connect. Our platform offers
-tools and opportunities to expand your business horizons and increase your
-income.</p>
+    <section id="how-it-works" class="py-16 px-4 sm:px-6 lg:px-8 bg-primary-bg">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">How It Works</h2>
+            
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="text-center">
-                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-bold text-blue-600">1</span>
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
+                        <i class="fas fa-user-plus text-primary-yellow text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Join the Network</h3>
-                    <p class="text-gray-600">Sign up and complete your profile to get started</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Step 1: Join</h3>
+                    <p class="text-gray-700">
+                        Create your free account and complete our guided onboarding process that matches you with the right opportunities based on your goals, skills, and interests.
+                    </p>
                 </div>
+
                 <div class="text-center">
-                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-bold text-blue-600">2</span>
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
+                        <i class="fas fa-route text-primary-yellow text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Create Connections</h3>
-                    <p class="text-gray-600">Match with partners that align with your goals</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Step 2: Choose Your Path</h3>
+                    <p class="text-gray-700">
+                        Select from our three core programs - become a brand ambassador, list as an entrepreneur, or join our Digital Stokvel community.
+                    </p>
                 </div>
+
                 <div class="text-center">
-                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-bold text-blue-600">3</span>
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
+                        <i class="fas fa-play text-primary-yellow text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Promote and Earn</h3>
-                    <p class="text-gray-600">Start promoting products and earning commissions</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Step 3: Take Action</h3>
+                    <p class="text-gray-700">
+                        Begin promoting products, scaling your business partnerships, or contributing to collective investments using our comprehensive tools.
+                    </p>
                 </div>
+
                 <div class="text-center">
-                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-bold text-blue-600">4</span>
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
+                        <i class="fas fa-money-bill-wave text-primary-yellow text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Grow Together</h3>
-                    <p class="text-gray-600">Scale your success with ongoing support</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Step 4: Get Paid</h3>
+                    <p class="text-gray-700">
+                        Receive your earnings through secure, weekly direct deposits to your South African bank account with full transparency.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Value Propositions -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Connect. Collaborate. Succeed.</h2>
-            <p class="text-gray-600 text-center mb-12">Discover the power of networking with WealthHub Connect. Our platform offers
-tools and opportunities to expand your business horizons and increase your
-income.
-</p>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl p-8 text-center shadow-glow hover-scale">
-                    <i class="fas fa-piggy-bank text-4xl text-green-600 mb-4"></i>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Build Your Financial Future</h3>
-                    <p class="text-gray-600">Create multiple income streams and achieve financial independence</p>
-                </div>
-                <div class="bg-white rounded-xl p-8 text-center shadow-glow hover-scale">
-                    <i class="fas fa-handshake text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Network with Professionals</h3>
-                    <p class="text-gray-600">Connect with like-minded entrepreneurs and ambassadors</p>
-                </div>
-                <div class="bg-white rounded-xl p-8 text-center shadow-glow hover-scale">
-                    <i class="fas fa-tools text-4xl text-yellow-600 mb-4"></i>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Grow with Expert Support</h3>
-                    <p class="text-gray-600">Access training, tools, and support to maximize your success</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Detailed Entrepreneur Section -->
-    <section id="entrepreneurs" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-4xl font-bold text-gray-800 mb-6">For Entrepreneurs</h2>
-                    <div class="space-y-6">
-                        <div class="bg-blue-50 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold text-blue-800 mb-3">
-                                <i class="fas fa-money-bill-wave mr-2"></i>Earning Potential
-                            </h3>
-                            <ul class="space-y-2 text-gray-700">
-                                <li>• Platform Commissions: R500 - R2,000 per sale</li>
-                                <li>• Partnership Bonuses: R1,000 - R5,000 monthly</li>
-                                <li>• Potential Monthly Income: R10,000 - R50,000+</li>
-                            </ul>
-                        </div>
-                        <div class="bg-green-50 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold text-green-800 mb-3">
-                                <i class="fas fa-tools mr-2"></i>Digital Marketing Tools
-                            </h3>
-                            <p class="text-gray-700">R2,500 value included with analytics, automation, and campaign management</p>
-                        </div>
-                        <div class="bg-yellow-50 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold text-yellow-800 mb-3">
-                                <i class="fas fa-dashboard mr-2"></i>Easy-to-Use Dashboard
-                            </h3>
-                            <p class="text-gray-700">Track performance and manage payments in real-time</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl p-8 text-white">
-                    <h3 class="text-2xl font-bold mb-6">Start Your Free Trial</h3>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <i class="fas fa-check mr-3"></i>
-                            <span>Access to full platform</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check mr-3"></i>
-                            <span>Connect with ambassadors</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check mr-3"></i>
-                            <span>Marketing tools included</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check mr-3"></i>
-                            <span>No setup fees</span>
-                        </li>
-                    </ul>
-                    <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-blue-900 py-3 rounded-lg font-semibold transition-colors">
-                        Start Your 30-Day Free Trial
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Detailed Ambassador Section -->
-    <section id="ambassadors" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl p-8 text-white order-2 md:order-1">
-                    <h3 class="text-2xl font-bold mb-6">Join as Ambassador</h3>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <i class="fas fa-check mr-3"></i>
-                            <span>Instant access to products</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check mr-3"></i>
-                            <span>Marketing materials provided</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check mr-3"></i>
-                            <span>Weekly commission payouts</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check mr-3"></i>
-                            <span>Comprehensive training</span>
-                        </li>
-                    </ul>
-                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors">
-                        Join 30-Day Free Trial
-                    </button>
-                </div>
-                <div class="order-1 md:order-2">
-                    <h2 class="text-4xl font-bold text-gray-800 mb-6">For Brand Ambassadors</h2>
-                    <div class="space-y-6">
-                        <div class="bg-yellow-50 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold text-yellow-800 mb-3">
-                                <i class="fas fa-percentage mr-2"></i>Commission Structure
-                            </h3>
-                            <ul class="space-y-2 text-gray-700">
-                                <li>• Base Commission: 5%-15% per sale</li>
-                                <li>• Performance Bonus: Up to 25%</li>
-                                <li>• Team Building Rewards</li>
-                            </ul>
-                        </div>
-                        <div class="bg-green-50 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold text-green-800 mb-3">
-                                <i class="fas fa-mobile mr-2"></i>Earn at Your Fingertips
-                            </h3>
-                            <p class="text-gray-700">Mobile-friendly platform for promotion anywhere, anytime</p>
-                        </div>
-                        <div class="bg-blue-50 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold text-blue-800 mb-3">
-                                <i class="fas fa-clock mr-2"></i>Average Monthly Earnings
-                            </h3>
-                            <p class="text-gray-700 font-semibold">R8,000 - R35,000+</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stokvel Section -->
-    <section id="stokvel" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-800 mb-6">Stokvel Program</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Join our community investment program for collective savings and shared returns
-                </p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
+    <!-- Why Choose Us -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Why Choose Us</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="text-center">
-                    <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-people-group text-2xl text-blue-600"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Collective Investment</h3>
-                    <p class="text-gray-600">Pool resources with community members for greater investment power</p>
+                    <i class="fas fa-trophy text-primary-yellow text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Proven Track Record</h3>
+                    <p class="text-gray-700">Over 1,000 active brand ambassadors generating consistent income streams with documented success stories across all provinces.</p>
                 </div>
+
                 <div class="text-center">
-                    <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-piggy-bank text-2xl text-green-600"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Community Savings</h3>
-                    <p class="text-gray-600">Traditional South African savings approach with modern digital tools</p>
+                    <i class="fas fa-shield-alt text-primary-yellow text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Financial Security</h3>
+                    <p class="text-gray-700">Weekly automated payouts, secure escrow system, and full regulatory compliance provide peace of mind for all transactions.</p>
                 </div>
+
                 <div class="text-center">
-                    <div class="bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-chart-line text-2xl text-yellow-600"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Shared Returns</h3>
-                    <p class="text-gray-600">Benefit from collective growth and shared investment returns</p>
+                    <i class="fas fa-headset text-primary-yellow text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Comprehensive Support</h3>
+                    <p class="text-gray-700">24/7 customer service, extensive training modules, and dedicated success managers ensure you have everything needed to thrive.</p>
+                </div>
+
+                <div class="text-center">
+                    <i class="fas fa-chart-line text-primary-yellow text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Transparent Operations</h3>
+                    <p class="text-gray-700">Real-time analytics, detailed financial reporting, and open communication policies mean no hidden fees or surprise deductions.</p>
+                </div>
+
+                <div class="text-center">
+                    <i class="fas fa-undo text-primary-yellow text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Risk-Free Trial</h3>
+                    <p class="text-gray-700">30-day free trial period with money-back guarantee allows you to experience the platform's potential without financial commitment.</p>
+                </div>
+
+                <div class="text-center">
+                    <i class="fas fa-star text-primary-yellow text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Quality Assurance</h3>
+                    <p class="text-gray-700">Every product, service, and partnership opportunity undergoes rigorous vetting to protect your reputation and earning potential.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">What Our Community Says</h2>
+    <section id="testimonials" class="py-16 px-4 sm:px-6 lg:px-8 bg-primary-bg">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Success Stories</h2>
+            
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl p-8 shadow-glow">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
                     <div class="flex items-center mb-6">
-                        <div class="bg-blue-600 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mr-4">
-                            TM
+                        <div class="bg-primary-yellow rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mr-4">
+                            ND
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-800">Thabo M.</h4>
-                            <p class="text-gray-600">Entrepreneur, Johannesburg</p>
+                            <h4 class="font-bold text-gray-900">Nomsa Dlamini</h4>
+                            <p class="text-sm text-gray-600">Business Consultant, Durban</p>
                         </div>
                     </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
+                    <p class="text-gray-700 italic mb-4">
+                        "MyWealthHub transformed my small consulting business into a multi-revenue operation. Through their ambassador network, I've generated over R28,000 in additional monthly income while the Stokvel program builds my long-term wealth. The transparency and support are unmatched."
+                    </p>
+                    <div class="flex text-primary-yellow">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-700 italic">"WealthHub Connect transformed my business. The ambassador network helped me reach customers I never could have found on my own."</p>
                 </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-glow">
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
                     <div class="flex items-center mb-6">
-                        <div class="bg-yellow-600 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mr-4">
-                            SK
+                        <div class="bg-primary-yellow rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mr-4">
+                            JM
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-800">Sarah K.</h4>
-                            <p class="text-gray-600">Brand Ambassador, Cape Town</p>
+                            <h4 class="font-bold text-gray-900">James Mokwena</h4>
+                            <p class="text-sm text-gray-600">Brand Ambassador, Johannesburg</p>
                         </div>
                     </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
+                    <p class="text-gray-700 italic mb-4">
+                        "As a brand ambassador, I've built a sustainable R22,000 monthly income promoting products I genuinely believe in. The training was comprehensive, the payouts are reliable, and the community support keeps me motivated. This platform changed my family's financial future."
+                    </p>
+                    <div class="flex text-primary-yellow">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-700 italic">"I'm earning more than I ever imagined as a brand ambassador. The training and support are exceptional."</p>
                 </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-glow">
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
                     <div class="flex items-center mb-6">
-                        <div class="bg-green-600 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mr-4">
-                            PN
+                        <div class="bg-primary-yellow rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mr-4">
+                            PV
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-800">Zinhle N.</h4>
-                            <p class="text-gray-600">Digital Marketer, Durban</p>
+                            <h4 class="font-bold text-gray-900">Patricia van der Merwe</h4>
+                            <p class="text-sm text-gray-600">Stokvel Member, Cape Town</p>
                         </div>
                     </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
+                    <p class="text-gray-700 italic mb-4">
+                        "Our Digital Stokvel group has achieved 18% annual returns through collective investment opportunities we could never access individually. The professional management and regular communication give us complete confidence in our financial growth strategy."
+                    </p>
+                    <div class="flex text-primary-yellow">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-700 italic">"The platform's analytics and tools have revolutionized how I approach digital marketing campaigns."</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section class="py-16 gradient-bg">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold text-white mb-6">Start Your 30-Day Free Trial Today</h2>
-            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                Join thousands of successful entrepreneurs and brand ambassadors building wealth in South Africa
+    <section class="py-20 px-4 sm:px-6 lg:px-8 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">
+                Your Financial Transformation Starts With a Single Decision
+            </h2>
+            <p class="text-xl mb-10 opacity-90">
+                Join thousands of South Africans who are already building multiple income streams, scaling their businesses, and securing their financial futures through MyWealthHub's proven ecosystem.
             </p>
-            
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white rounded-xl p-8">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">For Entrepreneurs</h3>
-                    <ul class="space-y-3 mb-8 text-left">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Complete platform access</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>1000+ ambassador network</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Advanced analytics dashboard</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Marketing automation tools</span>
-                        </li>
-                    </ul>
-                    <button class="w-full gold-gradient hover:opacity-90 text-white py-3 rounded-lg font-semibold transition-opacity">
-                        Start Entrepreneur Trial
-                    </button>
-                </div>
-                
-                <div class="bg-white rounded-xl p-8">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">For Brand Ambassadors</h3>
-                    <ul class="space-y-3 mb-8 text-left">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Immediate product access</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Weekly commission payouts</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>Comprehensive training program</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span>24/7 support and resources</span>
-                        </li>
-                    </ul>
-                    <button class="w-full gold-gradient hover:opacity-90 text-white py-3 rounded-lg font-semibold transition-opacity">
-                        Start Ambassador Trial
-                    </button>
-                </div>
-            </div>
-            
-            <div class="flex justify-center items-center space-x-8 mt-12">
-                <div class="text-center text-white">
-                    <i class="fas fa-shield text-2xl mb-2"></i>
-                    <p class="text-sm">30-Day Money Back Guarantee</p>
-                </div>
-                <div class="text-center text-white">
-                    <i class="fas fa-university text-2xl mb-2"></i>
-                    <p class="text-sm">Secure SA Banking</p>
-                </div>
-                <div class="text-center text-white">
-                    <i class="fas fa-headset text-2xl mb-2"></i>
-                    <p class="text-sm">24/7 Support</p>
-                </div>
-            </div>
+            <p class="text-lg mb-8 opacity-80">
+                Start your 30-day free trial today and discover why we're South Africa's fastest-growing wealth-building community.
+            </p>
+            <button class="bg-white text-primary-yellow px-12 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 transition duration-300 shadow-lg">
+                <i class="fas fa-rocket mr-3"></i>Join Now - Free Trial
+            </button>
         </div>
     </section>
 
@@ -642,10 +600,10 @@ income.
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="#home" class="hover:text-gold">Home</a></li>
                         <li><a href="#entrepreneurs" class="hover:text-gold">Marketplace</a></li>
-                        <li><a href="#ambassadors" class="hover:text-gold">Programs</a></li>
+                        <li><a href="#ambassadors" class="hover:text-gold">Stokvel Program</a></li>
+                        <li><a href="#ambassadors" class="hover:text-gold">Entrepreneurs Program</a></li>
+                        <li><a href="#ambassadors" class="hover:text-gold">Ambassadors Program</a></li>
                         <li><a href="#stokvel" class="hover:text-gold">About Us</a></li>
-                        <li><a href="#opportunities" class="hover:text-gold">Resources</a></li>
-                        <li><a href="#" class="hover:text-gold">Blog</a></li>
                     </ul>
                 </div>
                 
@@ -695,11 +653,6 @@ income.
         </div>
     </footer>
 
-
-  <!-- Footer -->
-  <footer class="py-8 bg-charcoal text-white text-center">
-    <p>&copy; 2025 MyWealthHub. All rights reserved.</p>
-  </footer>
 
 </body>
 </html>
