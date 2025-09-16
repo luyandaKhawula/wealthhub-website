@@ -451,6 +451,102 @@
                     <p class="text-gray-600">Your contributions are yours - tracked separately while benefiting from collective power. No risk of losing money due to other members' decisions.</p>
                 </div>
             </div>
+            <div class="my-12 p-6 bg-gold text-white rounded-lg shadow">
+                <h2 
+                    class="text-xl font-semibold cursor-pointer flex justify-between items-center"
+                    onclick="this.nextElementSibling.classList.toggle('hidden')"
+                >
+                    <i class="fa fa-info-circle mr-2"></i>Tax-Free Investment (TFI) : Your Wealth Foundation
+                    <span class="text-gray-500">+</span>
+                </h2>
+
+                <div class="mt-4 hidden text-xl bg-white text-black rounded-2xl p-6">
+                     <p class="mb-4">Every Stokvel member is encouraged to open a Tax-Free Investment:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Maximum contribution: R36,000/year (R3,000/month).</li>
+                        <li>All growth is 100% tax-free.</li>
+                        <li>Administered privately via Gayede Bluestar with Sanlam.</li>
+                        <li>Liquidity: You can withdraw, but the idea is long-term growth, not monthly withdrawals.</li>
+                    </ul>
+                    <p class="mt-4">
+                        <button onclick="document.getElementById('faqModal').classList.remove('hidden')" class="text-gold hover:underline font-bold">Click Here</button> to Learn More about <span class="font-bold">Tax-Free Investments (TFIs).</span>
+                    </p>
+                    <!-- Modal wrapper -->
+                        <div id="faqModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50 w-full">
+                        <div class="bg-white rounded-lg shadow-lg max-w-7xl w-full p-6 relative">
+                            <!-- Close button -->
+                            <button 
+                            class="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
+                            onclick="document.getElementById('faqModal').classList.add('hidden')"
+                            >
+                            ✖
+                            </button>
+
+                            <h2 class="text-2xl font-bold mb-6 text-gray-800 items-center">
+                            Understanding Your Tax-Free Investment Options
+                            </h2>
+
+                            <div class="space-y-5 max-h-[70vh] overflow-y-auto pr-2">
+                            <div>
+                                <p class="font-bold text-gray-900">What are the benefits of a Tax-Free Investment with Sanlam?</p>
+                                <p class="text-gray-700">
+                                Investing with Sanlam Tax-Free Investment via Gayede Bluestar offers secured tax-free advantages, optimized returns, and the opportunity for group discounts, enhancing your overall investment performance.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-gray-900">Can I choose my financial institution for tax-free investments?</p>
+                                <p class="text-gray-700">
+                                Yes, members have the flexibility to select any financial institution. While the Sanlam Tax-Free Investment is recommended, members have the freedom to choose any provider that aligns with their financial objectives. However, benefits such as group discounts and investment returns may vary based on the provider.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-gray-900">How does collective investment power improve my returns?</p>
+                                <p class="text-gray-700">
+                                By pooling resources with other members, you can access group discounts and potentially achieve better investment performance, maximizing your return on investment and reducing cost.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-gray-900">What are Social Group Investments?</p>
+                                <p class="text-gray-700">
+                                Social Group Investments allow members to share investments within their social groups, similar to traditional stokvel structures. This approach fosters reduced portfolio costs and a sense of community while maintaining individual investment control.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-gray-900">Is there a trial period for WealthHub Stokvel?</p>
+                                <p class="text-gray-700">
+                                Yes, members are offered a 1 month trial period to explore WealthHub Stokvel's offerings and assess their network's engagement. This allows them to evaluate the platform's benefits and make an informed decision about long-term participation.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-gray-900">What happens after the trial period?</p>
+                                <p class="text-gray-700">
+                                Following the trial period, members are required to establish a Tax-Free Investment account to maintain active membership. Not establishing a Tax-Free Investment account within the trial period will lead to account deactivation and forfeiture of accumulated benefits.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-gray-900">Is a Tax-Free Investment account mandatory?</p>
+                                <p class="text-gray-700">
+                                To fully benefit from the WealthHub Stokvel, members must set up a Tax-Free Investment account within the trial period. This requirement ensures that all members can take advantage of the tax benefits and group investment opportunities offered by the platform.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="font-bold text-gray-900">How do social group discounts work with individual investment autonomy?</p>
+                                <p class="text-gray-700">
+                                Members can utilize social group discounts on investment fees and other financial services via collective bargaining power while maintaining individual ownership and management of investments. The Stokvel supports a collaborative community while preserving individual investment autonomy.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -638,40 +734,56 @@
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">
                 Putting It All Together<br><span class="text-gold">Stokvel Total Package</span>
             </h2>
-
-            <p class="text-center text-black mb-12 text-lg">
-                Example — Active Stokvel Member with Ambassador + Entrepreneur roles:
-            </p>
-            
             <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8">
                 <div>
-                    <h3 class="text-2xl font-semibold mb-6 text-center">Monthly Income Breakdown</h3>
+                    <h3 class="text-2xl font-semibold mb-6 text-center">Example — Active Stokvel Member with Ambassador + Entrepreneur roles:</h3>
                     <div class="space-y-4">
                         <div class="flex justify-between items-center bg-white bg-opacity-20 rounded-lg p-4">
                             <div class="flex items-center">
-                                <i class="fas fa-chart-line mr-3 text-gold"></i>
-                                <span>Investment Returns</span>
+                                
+                                <span>Tax-Free Investment Referral Income:</span>
                             </div>
-                            <span class="font-bold text-xl">+R180</span>
+                            <span class="font-bold text-xl">R96,000/year</span>
                         </div>
                         <div class="flex justify-between items-center bg-white bg-opacity-20 rounded-lg p-4">
                             <div class="flex items-center">
-                                <i class="fas fa-hand-holding-usd mr-3 text-gold"></i>
-                                <span>Lending Interest Share</span>
+                                
+                                <span>TFI Contribution: </span>
                             </div>
-                            <span class="font-bold text-xl">+R150</span>
+                            <span class="font-bold text-xl">R36,000/year</span>
                         </div>
                         <div class="flex justify-between items-center bg-white bg-opacity-20 rounded-lg p-4">
                             <div class="flex items-center">
-                                <i class="fas fa-share-alt mr-3 text-gold"></i>
-                                <span>Referral Commissions</span>
+                                
+                                <span>Surplus into Loans (24% return on R60k):</span>
                             </div>
-                            <span class="font-bold text-xl">+R500</span>
+                            <span class="font-bold text-xl">+R14,400/year</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white bg-opacity-20 rounded-lg p-4">
+                            <div class="flex items-center">
+                                
+                                <span>Net TFI + Loan returns: R74,400/year</span>
+                            </div>
+                            <span class="font-bold text-xl">+R14,400/year</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white bg-opacity-20 rounded-lg p-4">
+                            <div class="flex items-center">
+                                
+                                <span>Membership Referrals (Ambassador role): </span>
+                            </div>
+                            <span class="font-bold text-xl">+R156,000/year</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white bg-opacity-20 rounded-lg p-4">
+                            <div class="flex items-center">
+                                
+                                <span>Product Sales Profit (Entrepreneur role, base scenario):</span>
+                            </div>
+                            <span class="font-bold text-xl"> +R5,054,400/year</span>
                         </div>
                         <div class="border-t border-white border-opacity-30 pt-4">
                             <div class="flex justify-between items-center text-2xl font-bold">
-                                <span>Total Monthly Earnings:</span>
-                                <span class="text-3xl">R830</span>
+                                <span>Grand Total Potential:</span>
+                                <span class="text-3xl">R5,284,800/year</span>
                             </div>
                         </div>
                     </div>
@@ -679,20 +791,6 @@
             </div>
         </div>
     </section>
-
-<section id="total-package" class="my-10 p-6 bg-white rounded-lg shadow">
-  <h3 class="text-xl font-semibold mb-4"></h3>
-  <p class="mb-4"></p>
-  <ul class="list-disc pl-6 space-y-2 mb-4">
-    <li>Tax-Free Investment Referral Income: R96,000/year</li>
-    <li>TFI Contribution: –R36,000/year</li>
-    <li>Surplus into Loans (24% return on R60k): +R14,400/year</li>
-    <li>Net TFI + Loan returns: R74,400/year</li>
-    <li>Membership Referrals (Ambassador role): +R156,000/year</li>
-    <li>Product Sales Profit (Entrepreneur role, base scenario): +R5,054,400/year</li>
-  </ul>
-  <p class="font-semibold">Grand Total Potential: R5,284,800/year</p>
-</section>
 
     <!-- Start Your Wealth-Building Journey -->
     <section class="py-16 bg-cream">
@@ -739,6 +837,12 @@
                 </div>
             </div>
         </div>
+
+        <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center mt-8">
+                <button class="bg-gold text-charcoal font-bold px-12 py-4 rounded-lg text-2xl hover:bg-white hover:text-gold hover:outline transition" id="start-trial">
+                <i class="fas fa-rocket mr-2"></i>Start Free Trial
+            </button>
+            </div>
     </section>
 
 
