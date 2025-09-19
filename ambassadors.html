@@ -33,6 +33,15 @@
         .text-shadow {
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
+        @keyframes pulseGlow {
+        0% { text-shadow: 0 0 0px rgba(255, 255, 255, 0.7); }
+        50% { text-shadow: 0 0 10px rgba(255, 255, 255, 1); }
+        100% { text-shadow: 0 0 0px rgba(255, 255, 255, 0.7); } 
+        }
+
+        .pulse-once {
+        animation: pulseGlow 1.5s infinite;
+        }
     </style>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -196,14 +205,20 @@
                 <p>
                     This isn't about aggressive selling or compromising your relationships. Instead, you become a bridge between excellent businesses and people who genuinely need their solutions. Every recommendation you make is backed by our quality guarantee, comprehensive training, and ongoing support system. Your success is built on trust, authenticity, and the satisfaction of helping others while building your own financial future.
                 </p>
+                <p class="mt-6 text-center text-lg text-black">
+                    For further reading and clarity on the program. Click below to learn more.
+                </p>
+                <div class="flex justify-center">
+                <i class="fa fa-chevron-down text-gold text-2xl animate-bounce"></i>
+                </div>
             </div>
 
             <div class="mt-12 p-6 bg-gold text-white rounded-lg shadow">
                 <h2 
                     class="text-xl font-semibold cursor-pointer flex justify-between items-center"
-                    onclick="this.nextElementSibling.classList.toggle('hidden')"
+                    onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.remove('pulse-once')"
                 >
-                    <i class="fa fa-info-circle mr-2"></i>More Than Employment. Build Your Own Business
+                    <i class="fa fa-info-circle mr-2 pulse-once"></i>More Than Employment. Build Your Own Business
                     <span class="text-gray-200">+</span>
                 </h2>
 
@@ -219,7 +234,7 @@
                     </ul>
                     <p>When you join, you are not “paying for a job.” You are investing in your own license to run a business. For only R1,000 per year (less than R90 per month), you gain access to systems and opportunities that cost thousands of rands to build.</p>
                 </div>
-                </div>
+            </div>
         </div>
     </section>
 
@@ -263,6 +278,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <p class="mt-6 text-center text-lg text-black">
+                    For further reading and clarity on the program. Click below to learn more.
+                </p>
+                <div class="flex justify-center">
+                <i class="fa fa-chevron-down text-gold text-2xl animate-bounce"></i>
             </div>
 
             <div class="mt-12 p-6 bg-gold text-white rounded-lg shadow">
@@ -355,6 +377,13 @@
                     </div>
                 </div>
             </div>
+
+            <p class="mt-6 text-center text-lg text-black">
+                    For further reading and clarity on the program. Click below to learn more.
+                </p>
+                <div class="flex justify-center">
+                <i class="fa fa-chevron-down text-gold text-2xl animate-bounce"></i>
+                </div>
 
             <div class="mt-12 p-6 bg-gold text-white rounded-lg shadow">
             <h2 
@@ -567,6 +596,13 @@
                     </ul>
                 </div>
             </div>
+
+            <p class="mt-6 text-center text-lg text-black">
+                    For further reading and clarity on the program. Click below to learn more.
+                </p>
+                <div class="flex justify-center">
+                <i class="fa fa-chevron-down text-gold text-2xl animate-bounce"></i>
+                </div>
 
             <div class="mt-12 p-6 bg-gold text-white rounded-lg shadow">
                 <h2 
